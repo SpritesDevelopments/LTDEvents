@@ -42,6 +42,9 @@ LTDEvents works seamlessly once configured. The plugin automatically sends notif
 
 Feel free to fork this repository, make changes, and submit pull requests. Bug fixes, improvements, and additional features are always welcome!
 
+## Our Discord
+[Support Server](https://discord.gg/6sH3EDRsUk)
+
 ## Credits
 
 This plugin was developed by [SpritesNetwork](https://github.com/SpritesNetwork).
