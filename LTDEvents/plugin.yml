@@ -1,0 +1,7 @@
+---
+name: LTDEvents
+version: 0.0.5
+main: SpritesNetwork\LTDEvents\Main
+api: 5.10.0
+src-namespace-prefix: SpritesNetwork\LTDEvents
+...
