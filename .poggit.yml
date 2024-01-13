@@ -1,6 +1,35 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/SpritesDevelopments/LTDEvents
+# .poggit.yml
+
+project:
+  name: LTDEvents
+  version: 0.0.5
+  main: SpritesNetwork\LTDEvents\Main
+  api: 5.10.0
+  src-namespace-prefix: SpritesNetwork\LTDEvents
+
 build-by-default: true
 branches:
-- main
+  - main
 projects: []
-...
+
+build:
+  main: SpritesNetwork\LTDEvents\Main
+  src:
+    - src/
+  libs: # Add any required libraries here
+    - some-library.jar
+
+lint:
+  exclude:
+    - "**/SomeGeneratedCode.php"
+
+release:
+  phar: LTDEvents.phar
+  on:
+    - tags
+
+hooks:
+  before:
+    - php -l src/
+  after:
+    - echo "Build successful!"
